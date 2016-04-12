@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "VersionCheckerParser.h"
 #import "VersionCheckerConfiguration.h"
 #import "VersionCheckerDefaultParser.h"

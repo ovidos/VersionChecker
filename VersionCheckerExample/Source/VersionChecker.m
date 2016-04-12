@@ -189,6 +189,8 @@ NSString * const VersionCheckerDefaultStoredVersionCheckDate = @"VersionCheckerD
                                                         [self promptVersionAlertForConfiguration:_configuration];
                                                         
                                                     });
+                                                }else{
+                                                    NSLog(@"%@" , error);
                                                 }
                                             }];
     [task resume];

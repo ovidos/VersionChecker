@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "VersionChecker.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [VersionChecker sharedInstance].remoteUrl = @"https://blogkema.azurewebsites.net/ios_update.json";
+    [VersionChecker sharedInstance].appId = @"1012312039123";
+    [[VersionChecker sharedInstance] checkNewVersion];
+
     // Override point for customization after application launch.
     return YES;
 }
