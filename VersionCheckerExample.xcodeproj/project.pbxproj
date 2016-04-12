@@ -13,6 +13,9 @@
 		FB5BEB051CBDA48100B17BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5BEB031CBDA48100B17BA1 /* Main.storyboard */; };
 		FB5BEB071CBDA48100B17BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5BEB061CBDA48100B17BA1 /* Assets.xcassets */; };
 		FB5BEB0A1CBDA48100B17BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5BEB081CBDA48100B17BA1 /* LaunchScreen.storyboard */; };
+		FB5BEB191CBDA4C800B17BA1 /* VersionChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5BEB131CBDA4C800B17BA1 /* VersionChecker.m */; };
+		FB5BEB1A1CBDA4C800B17BA1 /* VersionCheckerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5BEB151CBDA4C800B17BA1 /* VersionCheckerConfiguration.m */; };
+		FB5BEB1B1CBDA4C800B17BA1 /* VersionCheckerDefaultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5BEB171CBDA4C800B17BA1 /* VersionCheckerDefaultParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		FB5BEB061CBDA48100B17BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5BEB091CBDA48100B17BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5BEB0B1CBDA48100B17BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5BEB121CBDA4C800B17BA1 /* VersionChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VersionChecker.h; path = Source/VersionChecker.h; sourceTree = "<group>"; };
+		FB5BEB131CBDA4C800B17BA1 /* VersionChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VersionChecker.m; path = Source/VersionChecker.m; sourceTree = "<group>"; };
+		FB5BEB141CBDA4C800B17BA1 /* VersionCheckerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VersionCheckerConfiguration.h; path = Source/VersionCheckerConfiguration.h; sourceTree = "<group>"; };
+		FB5BEB151CBDA4C800B17BA1 /* VersionCheckerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VersionCheckerConfiguration.m; path = Source/VersionCheckerConfiguration.m; sourceTree = "<group>"; };
+		FB5BEB161CBDA4C800B17BA1 /* VersionCheckerDefaultParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VersionCheckerDefaultParser.h; path = Source/VersionCheckerDefaultParser.h; sourceTree = "<group>"; };
+		FB5BEB171CBDA4C800B17BA1 /* VersionCheckerDefaultParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VersionCheckerDefaultParser.m; path = Source/VersionCheckerDefaultParser.m; sourceTree = "<group>"; };
+		FB5BEB181CBDA4C800B17BA1 /* VersionCheckerParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VersionCheckerParser.h; path = Source/VersionCheckerParser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		FB5BEAF91CBDA48100B17BA1 /* VersionCheckerExample */ = {
 			isa = PBXGroup;
 			children = (
+				FB5BEB111CBDA49B00B17BA1 /* Source */,
 				FB5BEAFD1CBDA48100B17BA1 /* AppDelegate.h */,
 				FB5BEAFE1CBDA48100B17BA1 /* AppDelegate.m */,
 				FB5BEB001CBDA48100B17BA1 /* ViewController.h */,
@@ -77,6 +88,20 @@
 				FB5BEAFB1CBDA48100B17BA1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB5BEB111CBDA49B00B17BA1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FB5BEB121CBDA4C800B17BA1 /* VersionChecker.h */,
+				FB5BEB131CBDA4C800B17BA1 /* VersionChecker.m */,
+				FB5BEB141CBDA4C800B17BA1 /* VersionCheckerConfiguration.h */,
+				FB5BEB151CBDA4C800B17BA1 /* VersionCheckerConfiguration.m */,
+				FB5BEB161CBDA4C800B17BA1 /* VersionCheckerDefaultParser.h */,
+				FB5BEB171CBDA4C800B17BA1 /* VersionCheckerDefaultParser.m */,
+				FB5BEB181CBDA4C800B17BA1 /* VersionCheckerParser.h */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5BEB021CBDA48100B17BA1 /* ViewController.m in Sources */,
+				FB5BEB1B1CBDA4C800B17BA1 /* VersionCheckerDefaultParser.m in Sources */,
 				FB5BEAFF1CBDA48100B17BA1 /* AppDelegate.m in Sources */,
+				FB5BEB191CBDA4C800B17BA1 /* VersionChecker.m in Sources */,
+				FB5BEB1A1CBDA4C800B17BA1 /* VersionCheckerConfiguration.m in Sources */,
 				FB5BEAFC1CBDA48100B17BA1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
