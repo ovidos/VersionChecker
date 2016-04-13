@@ -23,25 +23,25 @@ We will put VersionChecker to CocoaPods soon.
 
 First of all create a json file and put it to remote. There is a default parser working with the json below.
 
-'''
+```
 {  
     "alertType": 1,
     "title": "Deneme Title",
     "versionNumber": "0.0.50",
     "versionDescription": "Loong loooooong description."
 }
-'''
+```
 
 There are 3 types of alert defined in VersionChecker. The first one forces user to update and does not show skip button. The second one prompts an alert with download now and download later button. And the last one does not show any alert. Why did we put the 3rd one? Because you may want to cancel your alert prompt for update :)
 
-'''
+```
 typedef NS_ENUM(NSUInteger, VersionCheckerAlertType)
 {
     VersionCheckerAlertTypeForce = 1,
     VersionCheckerAlertTypeOption = 2,
     VersionCheckerAlertTypeNone = 3
 };
-'''
+```
 
 Instantiate VersionChecker instance in didFinishLaunchingWithOptions just like below.
 
