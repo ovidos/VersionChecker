@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [VersionChecker sharedInstance].remoteUrl = @"https://blogkema.azurewebsites.net/ios_update.json";
+    [VersionChecker sharedInstance].remoteUrl = @"https://blogkemal.azurewebsites.net/ios_update.json";
     [VersionChecker sharedInstance].appId = @"1012312039123";
     [[VersionChecker sharedInstance] checkNewVersion];
 
