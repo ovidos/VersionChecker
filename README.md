@@ -45,7 +45,7 @@ typedef NS_ENUM(NSUInteger, VersionCheckerAlertType)
 
 Instantiate VersionChecker instance in didFinishLaunchingWithOptions just like below.
 
-'''
+```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [VersionChecker sharedInstance].remoteUrl = @"remotefileurl";
@@ -55,15 +55,16 @@ Instantiate VersionChecker instance in didFinishLaunchingWithOptions just like b
     // Override point for customization after application launch.
     return YES;
 }
-'''
+```
 
 And voila! You are ready to go.
 
 # Changing the Parser
 
-Sometimes, you may need a different parser for different needs. VersionChecker gives you a flexibility by changing the parser. What you need to do is to create a new interface and implement the 'VersionCheckerParser'. 
+Sometimes, you may need a different parser for different needs. VersionChecker gives you a flexibility by changing the parser. What you need to do is to create a new interface and implement the 'VersionCheckerParser' 
 
-'''
+```
+
 @interface VersionCheckerDifferentParser : NSObject <VersionCheckerParser>
 
 @end
@@ -83,15 +84,15 @@ Sometimes, you may need a different parser for different needs. VersionChecker g
 }
 @end
 
-'''
+```
 
 The parser above is just a sample. The dictionary will contain all of your JSON file provided by remote url.
 
 The last step is to set your parser to VersionChecker. Go back to AppDelegate and add below.
 
-'''
+```
  [VersionChecker sharedInstance].parser = [VersionCheckerDifferentParser new];
-'''
+```
 
 That's all!.
 
